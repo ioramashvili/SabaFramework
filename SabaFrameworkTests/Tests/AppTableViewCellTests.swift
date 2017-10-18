@@ -24,7 +24,7 @@ class AppTableViewCellTests: XCTestCase {
         XCTAssertEqual(AppTableViewCell.type, AppTableViewCellType.unknown)
     }
     
-    func testAwakeFromNib() {
+    func testSelectionStyle() {
         cell.awakeFromNib()
         
         XCTAssertEqual(cell.selectionStyle, .none)

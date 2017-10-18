@@ -26,58 +26,34 @@ class OptionalExtensionTests: XCTestCase {
     }
     
     func testBoolValue() {
-        guard let _ = param[0].boolValue else {
-            XCTFail("not Bool")
-            return
-        }
+        XCTAssertEqual(param[0].boolValue, true)
     }
     
     func testStringValue() {
-        guard let _ = param[1].stringValue else {
-            XCTFail("not String")
-            return
-        }
+        XCTAssertEqual(param[1].stringValue, "nil")
     }
     
     func testDoubleValue() {
-        guard let _ = param[2].doubleValue else {
-            XCTFail("not Double")
-            return
-        }
+        XCTAssertEqual(param[2].doubleValue, 0.01)
     }
     
     func testIntValue() {
-        guard let _ = param[3].intValue else {
-            XCTFail("not Int")
-            return
-        }
+        XCTAssertEqual(param[3].intValue, 0)
     }
     
     func testJSONParamValue() {
-        guard let _ = param[4].jsonParam else {
-            XCTFail("not JSONParam")
-            return
-        }
+        XCTAssertNotNil(param[4].jsonParam)
     }
     
     func testJSONParamsValue() {
-        guard let _ = param[5].jsonParams else {
-            XCTFail("not [JSONParam]")
-            return
-        }
+        XCTAssertNotNil(param[5].jsonParams)
     }
     
     func testOptionalJSONParamValue() {
-        guard let _ = param[6].optionalJSONParam else {
-            XCTFail("not OptionalJSONParam")
-            return
-        }
+        XCTAssertNotNil(param[6].optionalJSONParam)
     }
     
     func testOptionalJSONParamsValue() {
-        guard let _ = param[7].optionalJSONParams else {
-            XCTFail("not [OptionalJSONParam]")
-            return
-        }
+        XCTAssertNotNil(param[7].optionalJSONParams)
     }
 }
