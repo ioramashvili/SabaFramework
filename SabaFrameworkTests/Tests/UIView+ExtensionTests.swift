@@ -38,17 +38,6 @@ class UIViewExtensionTests: XCTestCase {
     func testBlurEffectBounds() {
         XCTAssertEqual(blurEffectView.frame, view.bounds)
     }
-    
-    func testRegisterTypes() {
-        let tableView = UITableView()
-        let types: [AppTableViewCell.Type] = [DummyTableViewCell.self]
-        
-        tableView.register(types: types)
-        
-        let isRegistered = tableView.dequeueReusableCell(withIdentifier: DummyTableViewCell.identifier) != nil
-        
-        XCTAssertEqual(isRegistered, true)
-    }
 }
 
 

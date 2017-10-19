@@ -22,6 +22,9 @@
 		43815ADA1F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */; };
 		43815ADD1F98897F00CAE4D7 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43815ADC1F98897F00CAE4D7 /* Test.storyboard */; };
 		43815ADF1F98899100CAE4D7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815ADE1F98899100CAE4D7 /* TestViewController.swift */; };
+		43815AE31F98958B00CAE4D7 /* UIStoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AE21F98958B00CAE4D7 /* UIStoryboardInstantiatable.swift */; };
+		43815AE51F98995900CAE4D7 /* UITableViewDequauable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AE41F98995900CAE4D7 /* UITableViewDequauable.swift */; };
+		43815AE71F9899FE00CAE4D7 /* UITableView+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AE61F9899FD00CAE4D7 /* UITableView+ExtensionTests.swift */; };
 		439BA6541F94972600547A0F /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6531F94972600547A0F /* Optional+Extension.swift */; };
 		439BA6561F9497E900547A0F /* Optional+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6551F9497E900547A0F /* Optional+ExtensionTests.swift */; };
 		439BA6581F94DE4100547A0F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6571F94DE4100547A0F /* UITableView+Extension.swift */; };
@@ -62,6 +65,9 @@
 		43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ExtensionTests.swift"; sourceTree = "<group>"; };
 		43815ADC1F98897F00CAE4D7 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		43815ADE1F98899100CAE4D7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		43815AE21F98958B00CAE4D7 /* UIStoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		43815AE41F98995900CAE4D7 /* UITableViewDequauable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDequauable.swift; sourceTree = "<group>"; };
+		43815AE61F9899FD00CAE4D7 /* UITableView+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ExtensionTests.swift"; sourceTree = "<group>"; };
 		439BA6531F94972600547A0F /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		439BA6551F9497E900547A0F /* Optional+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+ExtensionTests.swift"; sourceTree = "<group>"; };
 		439BA6571F94DE4100547A0F /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				434287B51F948B1E0033CD3D /* AppTableViewCellType.swift */,
+				43815AE21F98958B00CAE4D7 /* UIStoryboardInstantiatable.swift */,
+				43815AE41F98995900CAE4D7 /* UITableViewDequauable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 				4343307F1F96017C00632C65 /* String+ExtensionTests.swift */,
 				43C96F531F974A310032237A /* Bool+ExtensionTests.swift */,
 				43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */,
+				43815AE61F9899FD00CAE4D7 /* UITableView+ExtensionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43815AE51F98995900CAE4D7 /* UITableViewDequauable.swift in Sources */,
 				43C96F521F974A0E0032237A /* Bool+Extension.swift in Sources */,
 				434330821F9601AF00632C65 /* String+Extension.swift in Sources */,
 				434287B21F948AC00033CD3D /* NSObject+Extension.swift in Sources */,
@@ -343,6 +353,7 @@
 				434287B41F948AF30033CD3D /* AppTableViewCell.swift in Sources */,
 				439BA65C1F94DFA400547A0F /* UIView+Extension.swift in Sources */,
 				434330791F94FB7400632C65 /* CGFloat+Extension.swift in Sources */,
+				43815AE31F98958B00CAE4D7 /* UIStoryboardInstantiatable.swift in Sources */,
 				434287B61F948B1E0033CD3D /* AppTableViewCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +371,7 @@
 				439BA6561F9497E900547A0F /* Optional+ExtensionTests.swift in Sources */,
 				439BA65A1F94DEA900547A0F /* UIView+ExtensionTests.swift in Sources */,
 				4343307B1F94FB9600632C65 /* CGFloat+ExtensionTests.swift in Sources */,
+				43815AE71F9899FE00CAE4D7 /* UITableView+ExtensionTests.swift in Sources */,
 				439BA6611F94EA8A00547A0F /* DummyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
