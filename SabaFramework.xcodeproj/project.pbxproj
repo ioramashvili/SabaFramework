@@ -18,6 +18,10 @@
 		4343307B1F94FB9600632C65 /* CGFloat+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343307A1F94FB9600632C65 /* CGFloat+ExtensionTests.swift */; };
 		434330801F96017C00632C65 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343307F1F96017C00632C65 /* String+ExtensionTests.swift */; };
 		434330821F9601AF00632C65 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434330811F9601AF00632C65 /* String+Extension.swift */; };
+		43815AD81F98882200CAE4D7 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AD71F98882200CAE4D7 /* UIStoryboard+Extension.swift */; };
+		43815ADA1F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */; };
+		43815ADD1F98897F00CAE4D7 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43815ADC1F98897F00CAE4D7 /* Test.storyboard */; };
+		43815ADF1F98899100CAE4D7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43815ADE1F98899100CAE4D7 /* TestViewController.swift */; };
 		439BA6541F94972600547A0F /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6531F94972600547A0F /* Optional+Extension.swift */; };
 		439BA6561F9497E900547A0F /* Optional+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6551F9497E900547A0F /* Optional+ExtensionTests.swift */; };
 		439BA6581F94DE4100547A0F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BA6571F94DE4100547A0F /* UITableView+Extension.swift */; };
@@ -54,6 +58,10 @@
 		4343307A1F94FB9600632C65 /* CGFloat+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+ExtensionTests.swift"; sourceTree = "<group>"; };
 		4343307F1F96017C00632C65 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
 		434330811F9601AF00632C65 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		43815AD71F98882200CAE4D7 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ExtensionTests.swift"; sourceTree = "<group>"; };
+		43815ADC1F98897F00CAE4D7 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		43815ADE1F98899100CAE4D7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		439BA6531F94972600547A0F /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		439BA6551F9497E900547A0F /* Optional+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+ExtensionTests.swift"; sourceTree = "<group>"; };
 		439BA6571F94DE4100547A0F /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 		434287A31F948A340033CD3D /* SabaFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				43815ADB1F98897000CAE4D7 /* Storyboard */,
 				439BA65E1F94EA6700547A0F /* Data */,
 				434330771F94F2E200632C65 /* Tests */,
 				434287A61F948A340033CD3D /* Info.plist */,
@@ -167,6 +176,7 @@
 				4343307A1F94FB9600632C65 /* CGFloat+ExtensionTests.swift */,
 				4343307F1F96017C00632C65 /* String+ExtensionTests.swift */,
 				43C96F531F974A310032237A /* Bool+ExtensionTests.swift */,
+				43815AD91F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -183,11 +193,21 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		43815ADB1F98897000CAE4D7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				43815ADC1F98897F00CAE4D7 /* Test.storyboard */,
+				43815ADE1F98899100CAE4D7 /* TestViewController.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		439BA65D1F94E26F00547A0F /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				439BA6571F94DE4100547A0F /* UITableView+Extension.swift */,
 				439BA65B1F94DFA400547A0F /* UIView+Extension.swift */,
+				43815AD71F98882200CAE4D7 /* UIStoryboard+Extension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -302,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43815ADD1F98897F00CAE4D7 /* Test.storyboard in Resources */,
 				439BA6621F94EA8A00547A0F /* DummyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +338,7 @@
 				434330821F9601AF00632C65 /* String+Extension.swift in Sources */,
 				434287B21F948AC00033CD3D /* NSObject+Extension.swift in Sources */,
 				439BA6541F94972600547A0F /* Optional+Extension.swift in Sources */,
+				43815AD81F98882200CAE4D7 /* UIStoryboard+Extension.swift in Sources */,
 				439BA6581F94DE4100547A0F /* UITableView+Extension.swift in Sources */,
 				434287B41F948AF30033CD3D /* AppTableViewCell.swift in Sources */,
 				439BA65C1F94DFA400547A0F /* UIView+Extension.swift in Sources */,
@@ -329,9 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43815ADF1F98899100CAE4D7 /* TestViewController.swift in Sources */,
 				434287A51F948A340033CD3D /* NSObject+ExtensionTests.swift in Sources */,
 				434330801F96017C00632C65 /* String+ExtensionTests.swift in Sources */,
 				434287BB1F94908F0033CD3D /* AppTableViewCellTests.swift in Sources */,
+				43815ADA1F9888D600CAE4D7 /* UIStoryboard+ExtensionTests.swift in Sources */,
 				43C96F541F974A310032237A /* Bool+ExtensionTests.swift in Sources */,
 				439BA6561F9497E900547A0F /* Optional+ExtensionTests.swift in Sources */,
 				439BA65A1F94DEA900547A0F /* UIView+ExtensionTests.swift in Sources */,
