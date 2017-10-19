@@ -9,8 +9,8 @@ extension UITableView {
 }
 
 extension UITableView: UITableViewDequauable {
-    open func dequeueReusable<T: AppTableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T {
-        return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
+    open func dequeueReusable<T: AppTableViewCell>(cell: T.Type, for indexPath: IndexPath) -> T? {
+        return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as? T
     }
     
     open func dequeueReusable<T: AppTableViewCell>(cell: T.Type) -> T? {
